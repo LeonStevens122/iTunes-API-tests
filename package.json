@@ -1,0 +1,32 @@
+{
+  "name": "capstone-backend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "es6-promise": "^4.2.8",
+    "express": "4.17.1",
+    "gulp": "^4.0.2",
+    "helmet": "^3.22.0",
+    "isomorphic-fetch": "^2.2.1",
+    "mocha": "^7.1.1",
+    "node": "^13.12.0",
+    "nodemon": "^2.0.2",
+    "path": "^0.12.7",
+    "prettier": "^2.0.2",
+    "route": "^0.2.5",
+    "router": "^1.3.5"
+  },
+  "devDependencies": {
+    "babel-preset-env": "1.7.0",
+    "create-express-server": "^0.0.2"
+  },
+  "scripts": {
+    "start": "create-express-server start",
+    "build": "create-express-server build"
+  }
+}
