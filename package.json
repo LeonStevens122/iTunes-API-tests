@@ -7,9 +7,10 @@
     "body-parser": "^1.19.0",
     "chai": "^4.2.0",
     "cors": "^2.8.5",
+    "create-react-app": "^3.4.1",
     "dotenv": "^8.2.0",
     "es6-promise": "^4.2.8",
-    "express": "4.17.1",
+    "express": "^4.17.1",
     "gulp": "^4.0.2",
     "helmet": "^3.22.0",
     "isomorphic-fetch": "^2.2.1",
@@ -26,7 +27,7 @@
     "create-express-server": "^0.0.2"
   },
   "scripts": {
-    "start": "create-express-server start",
+    "start": "nodemon server.js",
     "build": "create-express-server build"
   }
 }
