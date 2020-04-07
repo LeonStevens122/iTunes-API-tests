@@ -2,9 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\client",
+    "\\client\\src",
     "\\client\\src\\Components",
-    "\\src\\components"
+    "\\tests"
   ],
-  "SelectedNode": "\\server.js",
+  "SelectedNode": "\\.babelrc",
   "PreviewInSolutionExplorer": false
 }

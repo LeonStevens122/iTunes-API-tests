@@ -6,8 +6,6 @@ import React from 'react';
 
 import chai from "chai";
 import chaiJestSnapshot from "chai-jest-snapshot";
-
-import React from "react";
 import renderer from "react-test-renderer";
 
 import Link from "./Link";
