@@ -1,14 +1,23 @@
-const expect = require('chai').expect;
+import { expect } from 'chai';
 const request = require('request');
-const Searchbar = require('./client/components/searchbar.jsx');
+import Adapter from 'enzyme-adapter-react-16';
+import { RefundedEmd } from './RefundedEmd';
+import { configure, shallow } from 'enzyme';
+const Searchbar = require('../client/components/searchbar.jsx');
 import React from 'react';
 
+import fetch from "isomorphic-fetch";
+/* eslint-disable no-console */
+/* eslint-disable no-debugger */
 
 import chai from "chai";
 import chaiJestSnapshot from "chai-jest-snapshot";
 import renderer from "react-test-renderer";
 
 import Link from "./Link";
+
+configure({ adapter: new Adapter() });
+
 
 
 it('renders correctly', () => {

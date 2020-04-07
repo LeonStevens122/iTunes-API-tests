@@ -10,6 +10,7 @@
     "cors": "^2.8.5",
     "create-react-app": "^3.4.1",
     "dotenv": "^8.2.0",
+    "enzyme-adapter-react-16": "^1.15.2",
     "es6-promise": "^4.2.8",
     "express": "^4.17.1",
     "fs": "^0.0.1-security",
