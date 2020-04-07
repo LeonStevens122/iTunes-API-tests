@@ -11,6 +11,7 @@
     "boostrap": "^2.0.0",
     "material-ui": "^0.20.2",
     "prettier": "^2.0.3",
+    "node": "^13.12.0",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.0",
     "react-dom": "^16.13.1",
