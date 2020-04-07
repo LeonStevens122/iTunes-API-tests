@@ -34,6 +34,7 @@
     "start": "nodemon server.js",
     "build": "create-express-server build",
     "test": "jest",
+    "heroku-prebuild": "rm -rf node_modules",
     "heroku-postbuild": "cd client && yarn && yarn run build"
   }
 }

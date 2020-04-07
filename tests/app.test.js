@@ -5,10 +5,7 @@ import { RefundedEmd } from './RefundedEmd';
 import { configure, shallow } from 'enzyme';
 const Searchbar = require('../client/components/searchbar.jsx');
 import React from 'react';
-
-import fetch from "isomorphic-fetch";
-/* eslint-disable no-console */
-/* eslint-disable no-debugger */
+import { render } from '@testing-library/react';
 
 import chai from "chai";
 import chaiJestSnapshot from "chai-jest-snapshot";
@@ -21,10 +18,11 @@ configure({ adapter: new Adapter() });
 
 
 it('renders correctly', () => {
-    const tree = renderer
-        .create(<Searchbar />)
-        .toJSON();
-    expect(tree).toMatchSnapshot();
+    const tree = render(<Searchbar />);
+    const formElement = getByText(/Form/);
+    expect(formElement).toBeInTheDocument();
+
+    
 });
 
 
