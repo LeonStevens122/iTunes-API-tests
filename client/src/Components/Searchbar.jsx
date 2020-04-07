@@ -5,7 +5,11 @@ import Button from "react-bootstrap/Button";
 import React from "react";
 import Form from "react-bootstrap/Form";
 import "bootstrap/dist/css/bootstrap.min.css";
+// render a search bar to get user input 
+// search bar gets text input from a text form 
+// and search criteria from a range of radiobuttons
 
+// button click event calls the search event from the server based on the user input
 function Searchbar({ criteria, getResults, search }) {
   return (
     <div>

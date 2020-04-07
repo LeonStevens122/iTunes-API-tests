@@ -1,6 +1,9 @@
 const expect = require('chai').expect;
 const request = require('request');
 const Searchbar = require('./client/components/searchbar.jsx');
+import React from 'react';
+
+
 import chai from "chai";
 import chaiJestSnapshot from "chai-jest-snapshot";
 
@@ -10,10 +13,14 @@ import renderer from "react-test-renderer";
 import Link from "./Link";
 
 
-
-before(function () {
-    chaiJestSnapshot.resetSnapshotRegistry();
+it('renders correctly', () => {
+    const tree = renderer
+        .create(<Searchbar />)
+        .toJSON();
+    expect(tree).toMatchSnapshot();
 });
+
+
 
 beforeEach(function () {
     chaiJestSnapshot.configureUsingMochaContext(this);
