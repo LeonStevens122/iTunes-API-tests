@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+
 import Searchbar from "./Components/Searchbar";
 import SearchResults from "./Components/searchresults";
 import "./App.css";
