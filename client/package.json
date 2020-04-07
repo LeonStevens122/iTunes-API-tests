@@ -2,13 +2,20 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3001/",
   "dependencies": {
+    "@material-ui/core": "^4.9.9",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "boostrap": "^2.0.0",
+    "material-ui": "^0.20.2",
+    "prettier": "^2.0.3",
     "react": "^16.13.1",
+    "react-bootstrap": "^1.0.0",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "use-force-update": "^1.0.7"
   },
   "scripts": {
     "start": "react-scripts start",

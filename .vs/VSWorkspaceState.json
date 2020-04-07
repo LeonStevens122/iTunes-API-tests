@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\dist",
-    "\\src"
+    "\\client",
+    "\\client\\src\\Components",
+    "\\src\\components"
   ],
-  "SelectedNode": "\\package.json",
+  "SelectedNode": "\\server.js",
   "PreviewInSolutionExplorer": false
 }
