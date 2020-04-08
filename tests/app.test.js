@@ -1,39 +1,36 @@
 import { expect } from 'chai';
 const request = require('request');
-import Adapter from 'enzyme-adapter-react-16';
-import { RefundedEmd } from './RefundedEmd';
-import { configure, shallow } from 'enzyme';
-const Searchbar = require('../client/components/searchbar.jsx');
-import React from 'react';
-import { render } from '@testing-library/react';
-
+import { shallow } from 'enzyme';
+import { shallowToJson } from 'enzyme-to-json';
+import React from 'react'
 import chai from "chai";
 import chaiJestSnapshot from "chai-jest-snapshot";
-import renderer from "react-test-renderer";
+import Searchbar from '../client/src/Components/Searchbar';
+import Enzyme from 'enzyme';
 
-import Link from "./Link";
-
-configure({ adapter: new Adapter() });
-
-
-
-it('renders correctly', () => {
-    const tree = render(<Searchbar />);
-    const formElement = getByText(/Form/);
-    expect(formElement).toBeInTheDocument();
-
-    
-});
+import { configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 
 
+Enzyme.configure({ adapter: new Adapter() });
+chai.use(chaiJestSnapshot);
 
-beforeEach(function () {
-    chaiJestSnapshot.configureUsingMochaContext(this);
+describe('SearchBar', () => {
+    it('should render correctly', () => {
+        const output = shallow(
+            <Searchbar initialValue="Mock Value"
+                criteria="Mock Criteria"
+                getResults="Mock Value"
+                search="Mock Value" />
+        );
+        expect(shallowToJson(output)).matchSnapshot();
+    });
 });
 
 // unit tests and suits
 
 describe('Server Status', function () {
+
     describe('Main page', function () {
         it('status', function (done) {
             request('http://localhost:3001/', function (error, response, body) {
@@ -44,30 +41,13 @@ describe('Server Status', function () {
 
         it('content', function (done) {
             request('http://localhost:3001/', function (error, response, body) {
-                expect(body).to.equal('Hello World');
+                expect(body).to.equal('Hello World!');
                 done();
             });
         });
     });
 
-    describe('About page', function () {
-        it('status', function (done) {
-            request('http://localhost:3001/about', function (error, response, body) {
-                expect(response.statusCode).to.equal(404);
-                done();
-            });
-        });
-
-    });
 });
 
-describe("React Search ", function () {
-    it("renders correctly", () => {
-        const tree = renderer.create(
-            <Link page="./client.components/SearchBar.jsx">Facebook</Link>
-        ).toJSON();
-        expect(tree).to.matchSnapshot();
-    });
-});
 
 

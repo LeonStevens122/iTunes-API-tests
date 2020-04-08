@@ -1,0 +1,167 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBar should render correctly 1`] = `
+<div>
+  <div>
+    <Form
+      inline={false}
+    >
+      <FormLabel
+        column={false}
+        srOnly={false}
+      >
+        Search Term
+      </FormLabel>
+      <FormControl
+        defaultValue=""
+        onChange="Mock Value"
+        placeholder="Enter search term"
+        required={true}
+        type="text"
+      />
+      <Feedback
+        type="valid"
+      >
+        Looks good!
+      </Feedback>
+    </Form>
+    <br />
+    <Form
+      inline={false}
+      onChange="Mock Criteria"
+    >
+      <FormGroup
+        controlId="formGroupRadio"
+        onChange="Mock Criteria"
+      >
+        <FormCheck
+          custom={true}
+          disabled={false}
+          id="movie"
+          inline={true}
+          isInvalid={false}
+          isValid={false}
+          label="Movie"
+          name="radioButtonSet"
+          title=""
+          type="radio"
+          value="movie"
+        />
+        <FormCheck
+          custom={true}
+          disabled={false}
+          id="podcast"
+          inline={true}
+          isInvalid={false}
+          isValid={false}
+          label="Podcast"
+          name="radioButtonSet"
+          title=""
+          type="radio"
+          value="podcast"
+        />
+        <FormCheck
+          custom={true}
+          disabled={false}
+          id="musicVideo"
+          inline={true}
+          isInvalid={false}
+          isValid={false}
+          label="Music Video"
+          name="radioButtonSet"
+          title=""
+          type="radio"
+          value="musicVideo"
+        />
+        <FormCheck
+          custom={true}
+          disabled={false}
+          id="audiobook"
+          inline={true}
+          isInvalid={false}
+          isValid={false}
+          label="Audio Book"
+          name="radioButtonSet"
+          title=""
+          type="radio"
+          value="audiobook"
+        />
+        <FormCheck
+          custom={true}
+          disabled={false}
+          id="shortFilm"
+          inline={true}
+          isInvalid={false}
+          isValid={false}
+          label="Short Film"
+          name="radioButtonSet"
+          title=""
+          type="radio"
+          value="shortFilm"
+        />
+        <FormCheck
+          custom={true}
+          disabled={false}
+          id="tvShow"
+          inline={true}
+          isInvalid={false}
+          isValid={false}
+          label="TV Show"
+          name="radioButtonSet"
+          title=""
+          type="radio"
+          value="tvShow"
+        />
+        <FormCheck
+          custom={true}
+          disabled={false}
+          id="software"
+          inline={true}
+          isInvalid={false}
+          isValid={false}
+          label="Software"
+          name="radioButtonSet"
+          title=""
+          type="radio"
+          value="software"
+        />
+        <FormCheck
+          custom={true}
+          disabled={false}
+          id="ebook"
+          inline={true}
+          isInvalid={false}
+          isValid={false}
+          label="E-Book"
+          name="radioButtonSet"
+          title=""
+          type="radio"
+          value="ebook"
+        />
+        <FormCheck
+          custom={true}
+          disabled={false}
+          id="all"
+          inline={true}
+          isInvalid={false}
+          isValid={false}
+          label="All"
+          name="radioButtonSet"
+          title=""
+          type="radio"
+          value="all"
+        />
+      </FormGroup>
+    </Form>
+    <Button
+      active={false}
+      disabled={false}
+      onClick="Mock Value"
+      type="button"
+      variant="primary"
+    >
+      Search
+    </Button>
+  </div>
+</div>
+`;
